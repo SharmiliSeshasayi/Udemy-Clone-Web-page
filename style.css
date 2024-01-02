@@ -47,6 +47,9 @@ font-family: 'Young Serif', serif;
     align-items: center;
   
 }
+.navbar__s4{
+    display: none;
+}
 .categories{
     display: flex;
     padding: 10px;
@@ -88,7 +91,10 @@ font-family: 'Young Serif', serif;
     
 }
 .course-card{
-    width:270px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
+    /* width:270px; */
 }
 .course-card img{
     width:100%
@@ -138,12 +144,12 @@ font-family: 'Young Serif', serif;
     margin-left: 20px;
 }
 .sacle-image__saclebox{
-    width:400px;
+    width:30%;
     padding:20px;
     position:absolute;
     bottom:70px;
     background-color: white;
-    left:150px;
+    left:10%;
     height:fit-content;
     animation-name: zoom;
     animation-duration: 2s;
@@ -208,4 +214,265 @@ font-family: 'Young Serif', serif;
 }
 .My-Learning:hover .My-Learning__Popup{
     display:block;
+}
+/* Media Queries */
+
+
+@media screen and (max-width:1024px)
+{
+    
+    .sacle-image__saclebox{
+        width:30%;
+        padding:1%;
+        position:absolute;
+        bottom:40%;
+        background-color: white;
+        left:10%;
+        height:30%;
+        animation-name: zoom;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        font-size: 10px;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    
+        }
+        .sacle-image__saclebox h1{
+            font-size: 10px;
+        }
+        .scale-image__btn1{
+            padding:5px;
+        }
+        .scale-image__btn2{
+            padding:5px;
+        }
+    }
+@media screen and (max-width:912px) {
+    body{
+        font-size: 10px;
+    }
+    .sacle-image__saclebox{
+        width:30%;
+        padding:1%;
+        position:absolute;
+        bottom:40%;
+        background-color: white;
+        left:10%;
+        height:30%;
+        animation-name: zoom;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        font-size: 8px;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    
+        }
+        .sacle-image__saclebox h1{
+            font-size: 10px;
+        }
+        .scale-image__btn1{
+            padding:5px;
+            font-size: 7px;
+            margin-top:2%
+           
+        }
+        .scale-image__btn2{
+            padding:5px;
+            font-size: 7px;
+            margin-left:1%;
+            margin-top:2%
+        }
+        /* .sacle-image__saclebox__p{
+            display:none;
+        } */
+        .categories{ 
+            display: none;
+           }
+           .navbar__s2,.navbar__s3{
+            display: none;
+           }
+           /* .My-Learning p{
+            font-size: 10px;
+           } */
+           /* .navbar__s3 p{
+            display: none;
+           } */
+            .navbar__s4{
+            display: block;
+           }
+        
+        
+    
+}
+@media screen and (max-width:758px){
+    .course-card{
+        flex-basis: 40%;
+    }
+   .categories{
+    display: none;
+   }
+   .navbar__s3,.navbar__s2{
+    display:none;
+   }
+   .navbar__s4{
+    display: block;
+   }
+   .sacle-image__saclebox{
+    width:20%;
+    font:5px;
+   }
+   .sacle-image__saclebox{
+    width:30%;
+    padding:1%;
+    position:absolute;
+    bottom:40%;
+    background-color: white;
+    left:10%;
+    height:30%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    font-size: 8px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+    }
+    .sacle-image__saclebox h1{
+        font-size:5px;
+    }
+    .scale-image__btn1{
+        padding:1%;
+        font-size:5px;
+        margin-top:5%;
+       
+    }
+    .scale-image__btn2{
+        padding:1%;
+        font-size: 5px;
+        margin-left:1%;
+        margin-top:5%
+    }
+    .sacle-image__saclebox__p{
+        display:none;
+    }
+}
+@media screen and (max-width:375px){
+    .course-card{
+        flex-basis: 40%;
+    }
+   .categories{
+    display: none;
+   }
+   .navbar__s3,.navbar__s2{
+    display:none;
+   }
+   .navbar__s4{
+    display: block;
+   }
+   .sacle-image__saclebox{
+    width:20%;
+    font:5px;
+   }
+   .sacle-image__saclebox{
+    width:30%;
+    padding:1%;
+    position:absolute;
+    bottom:40%;
+    background-color: white;
+    left:10%;
+    height:30%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    font-size: 8px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+    }
+    .sacle-image__saclebox h1{
+        font-size:5px;
+    }
+    .scale-image__btn1{
+        padding:1%;
+        font-size:5px;
+        margin-top:1%;
+       
+    }
+    .scale-image__btn2{
+        padding:1%;
+        font-size: 5px;
+        margin-left:1%;
+        margin-top:1%
+    }
+    .sacle-image__saclebox__p{
+        display:none;
+    }
+    .sacle-image__saclebox p{
+        font-size:7px;
+    }
+}
+@media screen and (max-width:280px){
+    .course-card{
+        flex-basis: 40%;
+    }
+   .categories{
+    display: none;
+   }
+   .navbar__s3,.navbar__s2{
+    display:none;
+   }
+   .navbar__s4{
+    display: block;
+   }
+   .sacle-image__saclebox{
+    width:20%;
+    font:5px;
+   }
+   .sacle-image__saclebox{
+    width:30%;
+    padding:1%;
+    position:absolute;
+    bottom:40%;
+    background-color: white;
+    left:10%;
+    height:30%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    font-size: 8px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+    }
+    .sacle-image__saclebox h1{
+        font-size:5px;
+    }
+    .scale-image__btn1{
+        padding:0.5%;
+        font-size:3px;
+        margin-top:5%;
+       
+    }
+    .scale-image__btn2{
+        padding:0.5%;
+        font-size:3px;
+        margin-left:1%;
+        margin-top:5%
+    }
+    .sacle-image__saclebox__p{
+        display:none;
+    }
+    .sacle-image__saclebox p{
+        font-size:5px;
+    }
 }
